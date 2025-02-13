@@ -19,13 +19,13 @@ const getTechNav = () =>
 
 function Layout() {
   return (
-    <div className="flex w-full flex-col p-300 md:p-500 lg:px-0 lg:py-600">
-      <div className="flex flex-col lg:ml-auto">
+    <div className="flex w-full flex-col p-300 md:p-500 lg:py-600 lg:pr-0 lg:pl-[165px]">
+      <div className="flex flex-col">
         <h1 className="text-preset-6-mobile md:text-preset-5 mb-300 text-center text-white uppercase md:text-left">
           <span className="mr-300 opacity-25">03</span>Space launch 101
         </h1>
 
-        <div className="flex flex-grow flex-col items-center justify-center text-white">
+        <div className="flex flex-grow flex-col items-center justify-center text-white lg:ml-auto">
           <Outlet />
         </div>
       </div>
