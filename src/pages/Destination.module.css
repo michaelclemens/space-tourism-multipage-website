@@ -1,0 +1,18 @@
+.background {
+  background-image: url('/assets/destination/background-destination-mobile.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  @media (width >= 48rem /* 768px */) {
+    background-image: url('/assets/destination/background-destination-tablet.jpg');
+  }
+
+  @media (width >= 64rem /* 1024px */) {
+    background-image: url('/assets/destination/background-destination-desktop.jpg');
+  }
+}

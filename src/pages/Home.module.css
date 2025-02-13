@@ -1,0 +1,20 @@
+.background {
+  background-image: url('/assets/home/background-home-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  @media (width >= 48rem /* 768px */) {
+    background-image: url('/assets/home/background-home-tablet.jpg');
+  }
+
+  @media (width >= 64rem /* 1024px */) {
+    background-image: url('/assets/home/background-home-desktop.jpg');
+  }
+}
