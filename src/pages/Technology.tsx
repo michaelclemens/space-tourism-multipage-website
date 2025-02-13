@@ -1,5 +1,5 @@
 import { technology } from '../data.json'
-import { background } from './Technology.module.css'
+import styles from './Technology.module.css'
 import { NavLink, Outlet, Route, Routes } from 'react-router'
 
 const getTechNav = () =>
@@ -29,7 +29,7 @@ function Layout() {
           <Outlet />
         </div>
       </div>
-      <div className={background} />
+      <div className={styles.background} />
     </div>
   )
 }
@@ -53,11 +53,11 @@ function Nav() {
   )
 }
 
-function Panel({ name, description, images }) {
+function Panel({ name, description, images }: { name: string; description: string; images: { portrait: string; landscape: string } }) {
   return (
     <div className="flex flex-grow flex-col items-center lg:flex-row">
       <div className="mt-800 w-screen flex-none lg:hidden">
-        <img src={images.portrait} className="max-h-[258px] w-full object-cover object-center md:max-h-[357px]" />
+        <img src={images.landscape} className="max-h-[258px] w-full md:max-h-[357px]" />
       </div>
       <Nav />
 

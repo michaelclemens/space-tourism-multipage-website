@@ -1,5 +1,5 @@
 import { destinations } from '../data.json'
-import { background } from './Destination.module.css'
+import styles from './Destination.module.css'
 import { NavLink, Outlet, Route, Routes } from 'react-router'
 
 const getDestinationNav = () =>
@@ -28,7 +28,7 @@ function Layout() {
         <Outlet />
       </div>
 
-      <div className={background} />
+      <div className={styles.background} />
     </div>
   )
 }
@@ -53,7 +53,19 @@ function Nav() {
   )
 }
 
-function Panel({ name, description, distance, travel, images }) {
+function Panel({
+  name,
+  description,
+  distance,
+  travel,
+  images,
+}: {
+  name: string
+  description: string
+  distance: string
+  travel: string
+  images: { webp: string }
+}) {
   return (
     <div className="flex flex-col items-center gap-y-400 lg:flex-row lg:gap-y-0">
       <div className="flex flex-col py-[26px] md:py-[42px] lg:w-1/2 lg:py-0">

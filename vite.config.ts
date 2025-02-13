@@ -7,9 +7,4 @@ import checker from 'vite-plugin-checker'
 export default defineConfig({
   base: '/space-tourism-multipage-website/',
   plugins: [react(), tailwindcss(), checker({ typescript: true, eslint: { lintCommand: 'eslint .', useFlatConfig: true } })],
-  css: {
-    modules: {
-      localsConvention: 'camelCaseOnly',
-    },
-  },
 })

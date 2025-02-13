@@ -1,5 +1,5 @@
 import { crew } from '../data.json'
-import { background } from './Crew.module.css'
+import styles from './Crew.module.css'
 import { NavLink, Outlet, Route, Routes } from 'react-router'
 
 const getCrewNav = () =>
@@ -26,7 +26,7 @@ function Layout() {
 
       <Outlet />
 
-      <div className={background} />
+      <div className={styles.background} />
     </div>
   )
 }
@@ -48,7 +48,7 @@ function Nav() {
   )
 }
 
-function Panel({ name, role, bio, images }) {
+function Panel({ name, role, bio, images }: { name: string; role: string; bio: string; images: { webp: string } }) {
   return (
     <div className="flex flex-grow flex-col items-center gap-400 overflow-hidden pt-500 text-white md:pt-400 lg:flex-row lg:items-stretch lg:pt-0">
       <div className="flex flex-grow flex-col md:w-lg lg:w-1/2">
