@@ -1,8 +1,9 @@
 {
-  "name": "vite-boilerplate",
+  "name": "space-tourism-multipage-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://michaelclemens.github.io/space-tourism-multipage-website/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
