@@ -1,4 +1,4 @@
-import { background } from './Home.module.css'
+import styles from './Home.module.css'
 import { Link } from 'react-router'
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={background} />
+      <div className={styles.background} />
     </div>
   )
 }
