@@ -1,18 +1,19 @@
 .background {
-  background-image: url('/assets/technology/background-technology-mobile.jpg');
-  background-size: cover;
+  background: var(--background-image) center / cover no-repeat #0b0d19;
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -10;
+  z-index: -1;
+
+  --background-image: url('/assets/technology/background-technology-mobile.jpg');
 
   @media (width >= 48rem /* 768px */) {
-    background-image: url('/assets/technology/background-technology-tablet.jpg');
+    --background-image: url('/assets/technology/background-technology-tablet.jpg');
   }
 
   @media (width >= 64rem /* 1024px */) {
-    background-image: url('/assets/technology/background-technology-desktop.jpg');
+    --background-image: url('/assets/technology/background-technology-desktop.jpg');
   }
 }

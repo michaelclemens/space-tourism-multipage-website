@@ -16,56 +16,6 @@
   --color-blue-300: #d0d6f9;
   --color-blue-900: #0b0d17;
 
-  --text-preset-1: 80px;
-  --text-preset-1--line-height: 91.7px;
-  --text-preset-1--font-weight: 400;
-  --text-preset-1--letter-spacing: 0px;
-
-  --text-preset-2: 56px;
-  --text-preset-2--line-height: 64.2px;
-  --text-preset-2--font-weight: 400;
-  --text-preset-2--letter-spacing: 0px;
-
-  --text-preset-3: 24px;
-  --text-preset-3--line-height: 27.5px;
-  --text-preset-3--font-weight: 400;
-  --text-preset-3--letter-spacing: 0px;
-
-  --text-preset-4: 18px;
-  --text-preset-4--line-height: 20.6px;
-  --text-preset-4--font-weight: 400;
-  --text-preset-4--letter-spacing: 0px;
-
-  --text-preset-5: 20px;
-  --text-preset-5--line-height: 24px;
-  --text-preset-5--font-weight: 400;
-  --text-preset-5--letter-spacing: 0.15em;
-
-  --text-preset-6: 16px;
-  --text-preset-6--line-height: 19.2px;
-  --text-preset-6--font-weight: 400;
-  --text-preset-6--letter-spacing: 0.15em;
-
-  --text-preset-6-mobile: 16px;
-  --text-preset-6-mobile--line-height: 19.2px;
-  --text-preset-6-mobile--font-weight: 400;
-  --text-preset-6-mobile--letter-spacing: 0.15em;
-
-  --text-preset-7: 14px;
-  --text-preset-7--line-height: 16.8px;
-  --text-preset-7--font-weight: 400;
-  --text-preset-7--letter-spacing: 2px;
-
-  --text-preset-8: 14px;
-  --text-preset-8--line-height: 16.8px;
-  --text-preset-8--font-weight: 400;
-  --text-preset-8--letter-spacing: 0.15em;
-
-  --text-preset-9: 15px;
-  --text-preset-9--line-height: 180%;
-  --text-preset-9--font-weight: 400;
-  --text-preset-9--letter-spacing: 0px;
-
   --spacing-25: 2px;
   --spacing-50: 4px;
   --spacing-100: 8px;
@@ -83,6 +33,10 @@
 
 .text-preset-1 {
   font-family: var(--font-bellefair);
+  font-size: 80px;
+  line-height: 91.7px;
+  font-weight: 400;
+  letter-spacing: 0px;
 
   @media (width >= 64rem /* 1024px */) {
     font-size: 144px;
@@ -91,6 +45,10 @@
 }
 .text-preset-2 {
   font-family: var(--font-bellefair);
+  font-size: 56px;
+  line-height: 64.2px;
+  font-weight: 400;
+  letter-spacing: 0px;
 
   @media (width >= 48rem /* 768px */) {
     font-size: 80px;
@@ -103,6 +61,10 @@
 }
 .text-preset-3 {
   font-family: var(--font-bellefair);
+  font-size: 24px;
+  line-height: 27.5px;
+  font-weight: 400;
+  letter-spacing: 0px;
 
   @media (width >= 48rem /* 768px */) {
     font-size: 40px;
@@ -115,6 +77,10 @@
 }
 .text-preset-4 {
   font-family: var(--font-bellefair);
+  font-size: 18px;
+  line-height: 20.6px;
+  font-weight: 400;
+  letter-spacing: 0px;
 
   @media (width >= 48rem /* 768px */) {
     font-size: 24px;
@@ -127,6 +93,10 @@
 }
 .text-preset-5 {
   font-family: var(--font-barlow-condensed);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
 
   @media (width >= 64rem /* 1024px */) {
     font-size: 28px;
@@ -138,16 +108,15 @@
   font-family: var(--font-bellefair);
   font-size: 28px;
   line-height: 32.1px;
+  font-weight: 400;
   letter-spacing: 0;
-  @media (width >= 48rem /* 768px */) {
-    font-size: 28px;
-    line-height: 32.1px;
-    letter-spacing: 0;
-  }
 }
-
 .text-preset-6-mobile {
   font-family: var(--font-barlow-condensed);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
 
   @media (width >= 64rem /* 1024px */) {
     font-size: 28px;
@@ -157,9 +126,17 @@
 }
 .text-preset-7 {
   font-family: var(--font-barlow-condensed);
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 .text-preset-8 {
   font-family: var(--font-barlow-condensed);
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
 
   @media (width >= 48rem /* 768px */) {
     font-size: 16px;
@@ -169,6 +146,10 @@
 }
 .text-preset-9 {
   font-family: var(--font-barlow);
+  font-size: 15px;
+  line-height: 180%;
+  font-weight: 400;
+  letter-spacing: 0px;
 
   @media (width >= 48rem /* 768px */) {
     font-size: 16px;
@@ -184,8 +165,4 @@
   mask-image: linear-gradient(180deg, #d9d9d9 77.39%, rgba(217, 217, 217, 0) 100%);
   mask-type: alpha;
   z-index: 50;
-}
-
-.no-wrap {
-  white-space: nowrap;
 }
