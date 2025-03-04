@@ -13,7 +13,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 ## Overview
 
 ### Screenshot
-
+![Screenshot 2025-03-04 at 15 31 23](https://github.com/user-attachments/assets/e8438dce-0477-451d-85bb-5cb64f88942b)
 
 ### Links
 
