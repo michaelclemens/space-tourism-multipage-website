@@ -35,7 +35,7 @@ function Panel({
   return (
     <div className="flex flex-col items-center gap-y-400 lg:flex-row lg:gap-y-0">
       <div className="flex flex-col py-[26px] md:py-[42px] lg:w-1/2 lg:py-0">
-        <img src={images.webp} className="max-h-[734px] w-[150px] md:w-[300px] lg:w-[480px]" />
+        <img src={images.webp} className="max-h-[734px] w-[150px] md:w-[300px] lg:w-[480px]" alt="Destination image" />
       </div>
       <div className="flex flex-grow flex-col items-center md:w-[514px] lg:w-1/2 lg:items-start lg:px-[54px]">
         <SubNav navigation={navigation} className="text-preset-8 mb-300 flex h-400 space-x-400 lg:mb-500">

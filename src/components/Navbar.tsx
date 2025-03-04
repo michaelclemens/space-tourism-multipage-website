@@ -10,13 +10,13 @@ export default function Navbar() {
     <div className="text-preset-8 w-full text-[16px]/[19.2px] tracking-[2px] lg:ml-auto lg:w-auto">
       <div className="flex h-[88px] justify-end px-300 md:hidden">
         <button className="flex-none hover:cursor-pointer" onClick={() => setOpened(true)}>
-          <img src={menuIcon} />
+          <img src={menuIcon} alt="Menu icon" />
         </button>
         <div
           className={`fixed top-0 z-50 flex h-screen w-[254px] flex-col bg-white/5 pl-400 text-white backdrop-blur-3xl transition-all duration-300 ${opended ? 'right-0' : '-right-full'}`}
         >
           <button className="mx-300 my-400 ml-auto flex hover:cursor-pointer" onClick={() => setOpened(false)}>
-            <img src={closeIcon} />
+            <img src={closeIcon} alt="Close icon" />
           </button>
           <nav className="mt-600 flex flex-col space-y-400">
             {navigation.map((nav, index) => (

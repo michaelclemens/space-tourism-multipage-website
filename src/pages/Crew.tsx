@@ -36,7 +36,7 @@ function Panel({ name, role, bio, images }: { name: string; role: string; bio: s
         </div>
       </div>
       <div className="mask flex flex-grow flex-col items-center justify-center lg:mt-0 lg:w-1/2 lg:justify-end">
-        <img src={images.webp} className="max-h-[734px] w-[271.24px] md:w-[446.74px] lg:w-[539.28px]" />
+        <img src={images.webp} className="max-h-[734px] w-[271.24px] md:w-[446.74px] lg:w-[539.28px]" alt="Crew image" />
       </div>
     </div>
   )

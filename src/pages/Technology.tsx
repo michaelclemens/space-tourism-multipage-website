@@ -23,7 +23,7 @@ function Panel({ name, description, images }: { name: string; description: strin
   return (
     <div className="flex flex-grow flex-col items-center lg:flex-row">
       <div className="mt-800 w-screen flex-none lg:hidden">
-        <img src={images.landscape} className="max-h-[258px] w-full md:max-h-[357px]" />
+        <img src={images.landscape} className="max-h-[258px] w-full md:max-h-[357px]" alt="Technology image landscape" />
       </div>
       <SubNav navigation={navigation} className="mt-400 mb-500 flex flex-row space-x-200 lg:my-0 lg:mr-800 lg:flex-col lg:space-y-400 lg:space-x-0">
         {({ index, isActive }) => (
@@ -42,7 +42,7 @@ function Panel({ name, description, images }: { name: string; description: strin
       </div>
 
       <div className="hidden flex-none lg:block">
-        <img src={images.portrait} className="max-h-[734px] w-[608px]" />
+        <img src={images.portrait} className="max-h-[734px] w-[608px]" alt="Technology image portrait" />
       </div>
     </div>
   )
